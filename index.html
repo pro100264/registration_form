@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/popup.css">
+
+</head>
+
+<body>
+<div class="registration">
+<form class="sign-up" method="get">
+    <a class="hide-popup" onclick="hidePopup()" href="#">x</a>
+       <h1>Sign up</h1>
+    <p>Username</p>
+    <input type="text">
+    <p>E-mail</p>
+    <input type="email">
+    <div class="first-column">
+    <p>Password</p>
+    <input type="password">
+        </div>
+    <div class="second-column">
+    <p>Confirm password</p>
+    <input type="password">
+    </div>
+    <hr size="1" color="lightgray">
+    <div class="first-column">
+    <p>First name</p>
+    <input type="text">
+    </div>
+    <div class="second-column">
+    <p>Last name</p>
+    <input type="text">
+    </div>
+    <div id="sex">
+    <p>Sex</p>
+        <input class="checkbox" type="radio" name="gender" value="male"> Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input class="checkbox" type="radio" name="gender" value="female"> Female
+        </div>
+
+    <p>City</p>
+    <select name="city">
+        <option value="empty" selected></option>
+        <option value="piter">Odessa</option>
+        <option value="krasnodar">Kyiv</option>
+        <option value="habarovsk">Kharkiv</option>
+        <option value="vladivostok">Yzhgorod</option>
+    </select>
+    <br>
+    <textarea cols="45" rows="5" name="comment">Few words about me</textarea>
+<hr size="1" color="lightgray">
+    <input class="checkbox" type="checkbox" name="terms">I agree with <a href="#">Terms and conditions</a>
+    <br>
+    <input class="submit" type="submit" value="Register">
+    <br>
+    <input class="reset" type="reset" value="Clear">
+
+</form>
+</div>
+</body>
+</html>
